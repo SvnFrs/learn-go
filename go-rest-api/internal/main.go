@@ -13,6 +13,7 @@ import (
 )
 
 func main() {
+
 	swaggerSpec, err := loads.Analyzed(restapi.SwaggerJSON, "")
 	if err != nil {
 		log.Fatalln(err)
